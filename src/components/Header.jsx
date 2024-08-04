@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.jpeg";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,11 +10,15 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-blue-600 text-white p-4">
+    <header className="bg-purple-900 text-white p-4">
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-xl lg:text-2xl md:text-2xl font-bold">
-          Psychological Health Services
-        </h1>
+        <div className="flex items-center">
+          {/* Logo Image */}
+          <img src={logo} alt="Logo" className="h-10 w-10 mr-3" />
+          <h1 className="text-xl lg:text-2xl md:text-2xl font-bold">
+            Psychological Health Services
+          </h1>
+        </div>
         <div className="lg:hidden">
           <button onClick={toggleMenu} className="focus:outline-none">
             <svg
@@ -43,7 +48,7 @@ const Header = () => {
         <nav
           className={`${
             isOpen ? "block" : "hidden"
-          } lg:flex lg:items-center lg:w-auto p-3 w-full bg-blue-600 lg:bg-transparent absolute lg:relative top-16 left-0 lg:top-0 transition-transform duration-300 ease-in-out`}>
+          } lg:flex lg:items-center lg:w-auto p-3 w-full bg-purple-900 lg:bg-transparent absolute lg:relative top-16 left-0 lg:top-0 transition-transform duration-300 ease-in-out`}>
           <Link
             to="/"
             className="block lg:inline-block w-full text-center lg:w-auto px-4 py-2 lg:py-0 border-t border-white lg:border-none">
