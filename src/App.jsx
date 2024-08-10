@@ -5,6 +5,9 @@ import AboutUs from "./pages/AboutUs";
 import Services from "./pages/Services";
 import Resources from "./pages/Resources";
 import ContactUs from "./pages/ContactUs";
+import ClinicalServices from "./pages/ClinicalServices";
+import TrainingServices from "./pages/TrainingServices";
+import ResearchServices from "./pages/ResearchServices";
 
 function App() {
   return (
@@ -15,6 +18,9 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/resources" element={<Resources />} />
         <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/services/clinical" element={<ClinicalServices />} />
+        <Route path="/services/training" element={<TrainingServices />} />
+        <Route path="/services/research" element={<ResearchServices />} />
       </Routes>
     </Router>
   );

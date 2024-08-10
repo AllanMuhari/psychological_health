@@ -260,16 +260,20 @@ const Home = () => {
       <Header />
       <main>
         {/* Welcome Section */}
+
         <section
-          className="text-center my-8 bg-cover bg-center flex items-center justify-center w-full"
+          className="relative text-center  bg-cover bg-center flex items-center justify-center w-full"
           style={{
             backgroundImage: `url(${backgroundImage})`,
             height: "800px",
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}>
-          <div className="bg-black bg-opacity-60 p-10 rounded-lg flex justify-center items-center flex-col w-full max-w-4xl mx-auto">
-            <h1 className="text-5xl font-extrabold text-white mb-6">
+          {/* Overlay div */}
+          <div className="absolute inset-0 bg-black opacity-80"></div>
+
+          <div className="relative z-10  p-10 rounded-lg  flex justify-center items-center flex-col w-full max-w-4xl mx-auto">
+            <h1 className="text-2xl md:text-4xl lg:text-5xl font-extrabold text-white m-2 ">
               Welcome to Psychological Health Services
             </h1>
             <p className="mt-4 text-lg text-white leading-relaxed max-w-3xl mx-auto">
