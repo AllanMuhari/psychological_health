@@ -8,7 +8,10 @@ import {
   FaHistory,
   FaStar,
 } from "react-icons/fa";
-import serviceImage1 from "../assets/service1.jpg";
+import serviceImage1 from "../assets/group.jpg";
+import serviceImage2 from "../assets/about1.jpg";
+import serviceImage3 from "../assets/about2.jpg";
+
 const AboutUs = () => {
   return (
     <>
@@ -98,28 +101,30 @@ const AboutUs = () => {
         </section>
 
         {/* History Section */}
-        <section className="bg-gray-100 p-6 rounded-lg shadow-md mb-8">
-          <h2 className="text-xl font-semibold mb-4">Our History</h2>
-          <div className="flex flex-col md:flex-row">
-            <div className="md:w-1/2 ">
+        <section className="bg-gray-100 p-10 rounded-lg shadow-lg mb-12">
+          <h2 className="text-3xl font-bold text-center mb-8 text-gray-800">
+            Our History
+          </h2>
+          <div className="flex flex-col md:flex-row md:space-x-6">
+            <div className="md:w-1/2 grid grid-cols-1 gap-6">
               <img
                 src={serviceImage1}
                 alt="Our History"
-                className="w-full h-auto rounded-lg shadow-md m-2"
+                className="w-full h-64 object-cover rounded-lg shadow-lg"
               />
               <img
-                src={serviceImage1}
+                src={serviceImage2}
                 alt="Our History"
-                className="w-full h-auto rounded-lg shadow-md m-2"
+                className="w-full h-64 object-cover rounded-lg shadow-lg"
               />
               <img
-                src={serviceImage1}
+                src={serviceImage3}
                 alt="Our History"
-                className="w-full h-auto rounded-lg shadow-md m-2"
+                className="w-full h-64 object-cover rounded-lg shadow-lg"
               />
             </div>
-            <div className="md:w-1/2 md:pl-6">
-              <p>
+            <div className="md:w-1/2 mt-8 md:mt-0">
+              <p className="text-lg leading-relaxed text-gray-700 mb-6">
                 Since our inception in 2009, Psychological Health Services (PHS)
                 has been on a transformative journey, addressing the crucial
                 need for employee health and wellness. What began as a humble
@@ -129,10 +134,10 @@ const AboutUs = () => {
                 years, our dedication to enhancing lives through mental
                 well-being has positioned us as a leader in the field.
               </p>
-              <p className="mt-4">
+              <p className="text-lg leading-relaxed text-gray-700 mb-6">
                 Today, PHS is structured around three core pillars:
               </p>
-              <ul className="list-disc list-inside mt-4">
+              <ul className="list-disc list-inside text-lg leading-relaxed text-gray-700 space-y-4">
                 <li>
                   <strong>Training Department:</strong> We offer dynamic and
                   relevant training programs designed to meet the evolving needs
@@ -200,7 +205,7 @@ const AboutUs = () => {
             ].map((competency, index) => (
               <div
                 key={index}
-                className="flex items-start p-4 bg-gray-50 rounded-lg shadow-md">
+                className="flex items-start p-4 bg-gray-50 rounded-lg shadow-md hover:bg-blue-50 hover:shadow-lg hover:transform hover:scale-105 transition-all duration-300 cursor-pointer">
                 {competency.icon}
                 <div>
                   <h3 className="text-lg font-semibold">{competency.title}</h3>
@@ -212,7 +217,7 @@ const AboutUs = () => {
         </section>
 
         {/* Clients and Partners Section */}
-        <section className="bg-white p-8 rounded-lg shadow-lg mb-8">
+        <section className="bg-white p-8 rounded-lg shadow-lg mb-8 ">
           <h2 className="text-3xl font-bold text-gray-800 mb-6">
             Our Clients and Partners
           </h2>
@@ -222,44 +227,44 @@ const AboutUs = () => {
             success. We are proud to have collaborated with organizations across
             various sectors, including:
           </p>
-          <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 list-none pl-0">
-            <li className="bg-gray-100 p-4 rounded-lg shadow-sm text-gray-700">
+          <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 list-none pl-0 ">
+            <li className="bg-gray-100 p-4 rounded-lg shadow-sm text-gray-700 hover:bg-blue-50 hover:shadow-lg hover:transform hover:scale-105 transition-all duration-300 cursor-pointer">
               Retirement Benefits Authority
             </li>
-            <li className="bg-gray-100 p-4 rounded-lg shadow-sm text-gray-700">
+            <li className="bg-gray-100 p-4 rounded-lg shadow-sm text-gray-700 hover:bg-blue-50 hover:shadow-lg hover:transform hover:scale-105 transition-all duration-300 cursor-pointer ">
               Public Service Commission
             </li>
-            <li className="bg-gray-100 p-4 rounded-lg shadow-sm text-gray-700">
+            <li className="bg-gray-100 p-4 rounded-lg shadow-sm text-gray-700 hover:bg-blue-50 hover:shadow-lg hover:transform hover:scale-105 transition-all duration-300 cursor-pointer">
               KEMSA
             </li>
-            <li className="bg-gray-100 p-4 rounded-lg shadow-sm text-gray-700">
+            <li className="bg-gray-100 p-4 rounded-lg shadow-sm text-gray-700 hover:bg-blue-50 hover:shadow-lg hover:transform hover:scale-105 transition-all duration-300 cursor-pointer">
               CMA
             </li>
-            <li className="bg-gray-100 p-4 rounded-lg shadow-sm text-gray-700">
+            <li className="bg-gray-100 p-4 rounded-lg shadow-sm text-gray-700 hover:bg-blue-50 hover:shadow-lg hover:transform hover:scale-105 transition-all duration-300 cursor-pointer">
               IRA
             </li>
-            <li className="bg-gray-100 p-4 rounded-lg shadow-sm text-gray-700">
+            <li className="bg-gray-100 p-4 rounded-lg shadow-sm text-gray-700 hover:bg-blue-50 hover:shadow-lg hover:transform hover:scale-105 transition-all duration-300 cursor-pointer">
               Anglican Church of Kenya
             </li>
-            <li className="bg-gray-100 p-4 rounded-lg shadow-sm text-gray-700">
+            <li className="bg-gray-100 p-4 rounded-lg shadow-sm text-gray-700 hover:bg-blue-50 hover:shadow-lg hover:transform hover:scale-105 transition-all duration-300 cursor-pointer">
               National Intelligence Service
             </li>
-            <li className="bg-gray-100 p-4 rounded-lg shadow-sm text-gray-700">
+            <li className="bg-gray-100 p-4 rounded-lg shadow-sm text-gray-700 hover:bg-blue-50 hover:shadow-lg hover:transform hover:scale-105 transition-all duration-300 cursor-pointer">
               Fairtrade Africa
             </li>
-            <li className="bg-gray-100 p-4 rounded-lg shadow-sm text-gray-700">
+            <li className="bg-gray-100 p-4 rounded-lg shadow-sm text-gray-700 hover:bg-blue-50 hover:shadow-lg hover:transform hover:scale-105 transition-all duration-300 cursor-pointer">
               KICC
             </li>
-            <li className="bg-gray-100 p-4 rounded-lg shadow-sm text-gray-700">
+            <li className="bg-gray-100 p-4 rounded-lg shadow-sm text-gray-700 hover:bg-blue-50 hover:shadow-lg hover:transform hover:scale-105 transition-all duration-300 cursor-pointer">
               Kenya Airways
             </li>
-            <li className="bg-gray-100 p-4 rounded-lg shadow-sm text-gray-700">
+            <li className="bg-gray-100 p-4 rounded-lg shadow-sm text-gray-700 hover:bg-blue-50 hover:shadow-lg hover:transform hover:scale-105 transition-all duration-300 cursor-pointer">
               Jubilee Insurance
             </li>
-            <li className="bg-gray-100 p-4 rounded-lg shadow-sm text-gray-700">
+            <li className="bg-gray-100 p-4 rounded-lg shadow-sm text-gray-700 hover:bg-blue-50 hover:shadow-lg hover:transform hover:scale-105 transition-all duration-300 cursor-pointer">
               Unilever Tea Kericho
             </li>
-            <li className="bg-gray-100 p-4 rounded-lg shadow-sm text-gray-700">
+            <li className="bg-gray-100 p-4 rounded-lg shadow-sm text-gray-700 hover:bg-blue-50 hover:shadow-lg hover:transform hover:scale-105 transition-all duration-300 cursor-pointer">
               National Housing Corporation
             </li>
           </ul>

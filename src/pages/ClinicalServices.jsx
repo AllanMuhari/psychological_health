@@ -49,9 +49,11 @@ const ClinicalServices = () => {
                 help you set and achieve personal goals, empowering you to take
                 control of your mental health journey.
               </p>
-              <button className="bg-blue-600 text-white px-4 py-2 rounded-md">
-                Book an Appointment
-              </button>
+              <Link to="/contact-us">
+                <button className="bg-blue-600 text-white px-4 py-2 rounded-md">
+                  Book an Appointment
+                </button>
+              </Link>
             </div>
 
             {/* Group Counseling */}
@@ -69,9 +71,11 @@ const ClinicalServices = () => {
                 isolation, depression, or behavioral issues, these sessions
                 offer a unique opportunity to connect and heal collectively.
               </p>
-              <button className="bg-blue-600 text-white px-4 py-2 rounded-md">
-                Book an Appointment
-              </button>
+              <Link to="/contact-us">
+                <button className="bg-blue-600 text-white px-4 py-2 rounded-md">
+                  Book an Appointment
+                </button>
+              </Link>
             </div>
 
             {/* Teletherapy */}
@@ -88,9 +92,11 @@ const ClinicalServices = () => {
                 the comfort of your own space, ensuring that help is always
                 within reach.
               </p>
-              <button className="bg-blue-600 text-white px-4 py-2 rounded-md">
-                Book an Appointment
-              </button>
+              <Link to="/contact-us">
+                <button className="bg-blue-600 text-white px-4 py-2 rounded-md">
+                  Book an Appointment
+                </button>
+              </Link>
             </div>
 
             {/* Family/Couples Counseling */}
@@ -109,9 +115,11 @@ const ClinicalServices = () => {
                 environment to improve communication, resolve conflicts, and
                 build stronger, healthier relationships.
               </p>
-              <button className="bg-blue-600 text-white px-4 py-2 rounded-md">
-                Book an Appointment
-              </button>
+              <Link to="/contact-us">
+                <button className="bg-blue-600 text-white px-4 py-2 rounded-md">
+                  Book an Appointment
+                </button>
+              </Link>
             </div>
 
             {/* Crisis Intervention */}
@@ -129,9 +137,11 @@ const ClinicalServices = () => {
                 services offer critical assistance, helping you navigate through
                 the toughest moments with care and expertise.
               </p>
-              <button className="bg-blue-600 text-white px-4 py-2 rounded-md">
-                Book an Appointment
-              </button>
+              <Link to="/contact-us">
+                <button className="bg-blue-600 text-white px-4 py-2 rounded-md">
+                  Book an Appointment
+                </button>
+              </Link>
             </div>
           </div>
 

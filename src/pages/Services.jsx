@@ -400,7 +400,7 @@ const Services = () => {
         <h1 className="text-3xl font-bold text-center mb-8">Our Services</h1>
 
         {/* Clinical Services */}
-        <section className="bg-white p-8 rounded-lg shadow-lg mb-12">
+        <section className="bg-white p-8 rounded-lg shadow-lg mb-12 hover:bg-blue-50 hover:shadow-lg hover:transform hover:scale-105 transition-all duration-300 cursor-pointer">
           <div className="flex items-center mb-6">
             <FaClinicMedical className="text-blue-600 text-4xl mr-4" />
             <h2 className="text-2xl font-bold">Clinical Services</h2>
@@ -417,7 +417,7 @@ const Services = () => {
         </section>
 
         {/* Training Services */}
-        <section className="bg-white p-8 rounded-lg shadow-lg mb-12">
+        <section className="bg-white p-8 rounded-lg shadow-lg mb-12 hover:bg-blue-50 hover:shadow-lg hover:transform hover:scale-105 transition-all duration-300 cursor-pointer">
           <div className="flex items-center mb-6">
             <FaChalkboardTeacher className="text-green-600 text-4xl mr-4" />
             <h2 className="text-2xl font-bold">Training Services</h2>
@@ -434,7 +434,7 @@ const Services = () => {
         </section>
 
         {/* Research Services (replacing Consultancy Services) */}
-        <section className="bg-white p-8 rounded-lg shadow-lg mb-12">
+        <section className="bg-white p-8 rounded-lg shadow-lg mb-12 hover:bg-blue-50 hover:shadow-lg hover:transform hover:scale-105 transition-all duration-300 cursor-pointer">
           <div className="flex items-center mb-6">
             <FaSearch className="text-red-600 text-4xl mr-4" />
             <h2 className="text-2xl font-bold">Research Services</h2>
@@ -457,4 +457,3 @@ const Services = () => {
 };
 
 export default Services;
-

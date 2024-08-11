@@ -11,6 +11,7 @@ import {
   faEnvelope,
   faAngleRight,
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -21,58 +22,58 @@ const Footer = () => {
             <h4 className="text-lg font-bold mb-4">Quick Links</h4>
             <ul>
               <li>
-                <a href="/" className="flex items-center hover:underline">
+                <Link to="/" className="flex items-center hover:underline">
                   <FontAwesomeIcon icon={faAngleRight} className="mr-2" />
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/about-us"
+                <Link
+                  to="/about-us"
                   className="flex items-center hover:underline">
                   <FontAwesomeIcon icon={faAngleRight} className="mr-2" />
                   About Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/services"
+                <Link
+                  to="/services"
                   className="flex items-center hover:underline">
                   <FontAwesomeIcon icon={faAngleRight} className="mr-2" />
                   Our Services
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/resources"
+                <Link
+                  to="/resources"
                   className="flex items-center hover:underline">
                   <FontAwesomeIcon icon={faAngleRight} className="mr-2" />
                   Resources
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/contact-us"
+                <Link
+                  to="/contact-us"
                   className="flex items-center hover:underline">
                   <FontAwesomeIcon icon={faAngleRight} className="mr-2" />
                   Contact Us
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/privacy-policy"
+                <Link
+                  to="/privacy-policy"
                   className="flex items-center hover:underline">
                   <FontAwesomeIcon icon={faAngleRight} className="mr-2" />
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/terms-of-service"
+                <Link
+                  to="/terms-of-service"
                   className="flex items-center hover:underline">
                   <FontAwesomeIcon icon={faAngleRight} className="mr-2" />
                   Terms of Service
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
