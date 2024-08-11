@@ -419,7 +419,9 @@ const Home = () => {
                   className="flex flex-col items-center p-6 bg-gray-100 rounded-lg">
                   <div className="w-32 h-32 flex items-center justify-center mb-6">
                     <img
-                      src={testimonial.image}
+                      src={`https://via.placeholder.com/128?text=${encodeURIComponent(
+                        testimonial.name.charAt(0)
+                      )}`}
                       alt={testimonial.name}
                       className="w-full h-full object-cover rounded-full border border-gray-300"
                     />
@@ -437,6 +439,7 @@ const Home = () => {
             </Carousel>
           </div>
         </section>
+
         <main className="container mx-auto p-4">
           <div className="flex flex-col md:flex-row gap-8">
             <div className="w-full md:w-1/2 bg-white p-6 rounded-lg shadow-lg">
